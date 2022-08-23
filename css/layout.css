@@ -15,7 +15,7 @@
 /* MAIN MENU */
 .main-menu {
     z-index: 9998;
-    background-color: #11141b;
+    background: linear-gradient(to right,#ef833b,#f78538);
     position: fixed;
     top: 0;
     right: 0;
@@ -98,6 +98,7 @@
 }
 #roadmap .card {
     padding: 40px 20px 30px 20px;
+    min-height: 15.5rem
 }
 
 @media (max-width: 768px) {

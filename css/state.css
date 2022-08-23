@@ -49,18 +49,18 @@ a:hover {
 }
 .main-menu ul li a:hover,
 .main-menu ul li a.active {
-    color: #fff!important;
+    color: #000000!important;
 }
 
 /* FOOTER */
 footer a:hover {
-    color: #fff!important;
+    color: #000000!important;
 }
 .main-footer .social a i:hover{
-    color: #00a8ff;
+    color: #000000;
 }
 footer .copyright a:hover {
-    color: #00a8ff;
+    color: #000000;
 }
 
 /* MAIN BANNER */
