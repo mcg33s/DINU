@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Doge Inu - Community-driven token">
+        <meta name="author" content="Community">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:image:width" content="200" />
+        <meta property="og:image:height" content="200" />
+        <meta property="og:site-name" content="" />
+        <meta property="og:description" content="..." />
+
+        <link rel="apple-touch-icon" sizes="57x57" href="">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/icon/apple-touch-icon1.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/icon/apple-touch-icon2.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/icon/apple-touch-icon3.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/icon/apple-touch-icon4.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/icon/apple-touch-icon5.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/icon/apple-touch-icon6.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/icon/apple-touch-icon7.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="img/icon/android-chrome-192x192">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/icon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <title>Doge Inu Community Token and Website</title>
+
+        <!-- Jquery CDN -->
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Google font : Roboto -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+        <!-- Slick -->
+        <link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
+        <!-- Main style -->
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/module.css">
+        <link rel="stylesheet" href="css/state.css">
+
+        <!-- Smooth show effect -->
+        <script>
+            $(document).ready(function(){
+                const ratio = .1
+                const options = {
+                root: null,
+                rootMargin: '0px',
+                threshold: ratio
+                }
+                const handleIntersect = function (entries, observer){
+                entries.forEach(function (entry){
+                    if (entry.intersectionRatio > ratio){
+                    entry.target.classList.add('reveal-visible')
+                    observer.unobserve(entry.target)
+                    }
+                })
+                }
+                const observer = new IntersectionObserver(handleIntersect, options)
+                document.querySelectorAll('[class*="reveal-"]').forEach(function (r) {
+                    observer.observe(r)
+                })
+            });
+        </script>
+    </head>
+
+    <body>
+        <!-- Main Header -->
+        <header class="main-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <a href="#home" class="logo"><span class="color">$</span>DINU</a>
+                    </div>
+                    <div class="col-6 text-right">
+                        <span id="btnMenu" class="btn btn-secondary">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Menu -->
+        <div class="main-menu">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#comingsoon">Coming Soon</a></li>
+                        <li><a href="#roadmap">Roadmap</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Main Wrapper -->
+        <div class="main-wrapper">
+
+            <!-- Main Banner -->
+            <section id="home" class="main-banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-8 reveal-2">
+                            <h1>Doge Inu Community Token</h1>
+                            <p>Doge Inu ($DINU) is a community-driven token, </br> so it is lead by the community for the community.</p>
+                            <a class="btn btn-md btn-primary" href="https://dexscreener.com/dogechain/0x17ee6a045d514818418372b2bb8e9997e71eec8f">Chart <i class="fa fa-line-chart" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col-12 col-md-4 reveal-3">
+                            <img class="img-fluid" src="img/blockchain.png" alt="/">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About section -->
+            <section id="about" class="page-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 reveal-2">
+                            <hr>
+                            <h2 class="page-title">About us</h2>
+                        </div>
+                        <article class="col-12 col-md-6 reveal-2">
+                            <h3><strong>100% Community-driven Token</strong></h3>
+                            <p>Our story will be told throughout the Crypto world, how a community came together after a dev went rogue on us.</p><br>
+                            <p>You can take the socials away and abandon the project, but you can't take away a community.</p>
+                        </article>
+                        <article class="col-12 col-md-6 reveal-2">
+
+                        </article>
+                        <article class="col-12 reveal-2 mt-4">
+                            <h3>Join us:</h3>
+                            <a target="_blank" href="https://twitter.com/DogeInuDC"><i class="fab fa-twitter"></i></a>
+                            <a target="_blank" href="https://t.me/DogeInuDC"><i class="fab fa-telegram-plane"></i></a>
+                            <a target="_blank" href="https://reddit.com/r/dogeinuDC"><i class="fab fa-reddit-alien"></i></a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features section -->
+            <section id="features" class="page-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 reveal-2">
+                            <hr>
+                            <h2 class="page-title">Our features</h2>
+                        </div>
+                        <article class="col-12 col-md-6 reveal-2">
+                            <h3><i class="fa fa-check-square" aria-hidden="true"></i> Contract Renounced</h3>
+                            <p>The smart contract's ownership is renounced, meaning no one can modify, delete, or exploit the contract</p>
+                        </article>
+                        <article class="col-12 col-md-6 reveal-2">
+                            <h3><i class="fa fa-fire" aria-hidden="true"></i> Burned Liquidity</h3>
+                            <p>The liquidity was burned at launch, meaning we're SAFU.</p>
+                        </article>
+                        <article class="col-12 col-md-6 reveal-2">
+                            <h3><i class="fa fa-exchange" aria-hidden="true"></i> 0% Tax</h3>
+                            <p>Our community enjoys 0% tax trading the token on any swap.</p>
+                        </article>
+                        <article class="col-12 col-md-6 reveal-2">
+                            <h3><i class="fa fa-users" aria-hidden="true"></i> Community-Driven</h3>
+                            <p>The community helps the token strive by organizing raids and recruiting new members and users.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team section -->
+            <section id="team" class="page-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 reveal-2">
+                            <hr>
+                            <h2 class="page-title">Team</h2>
+                        </div>
+                        <div class="col align-self-center">
+                          <p>TEH COMMUNITY!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Partners section -->
+            <section id="comingsoon" class="page-section">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col align-self-start">
+                          <hr>
+                          <h2 class="page-title">Coming Soon</h2>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-4">
+                        <img class="img-fluid" src="img/companies/1.png" alt="Coin Gecko">
+                      </div>
+                      <div class="col-4">
+                        <img class="img-fluid" src="img/companies/2.png" alt="Coin Marketcap">
+                      </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Roadmap section -->
+            <section id="roadmap" class="page-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 reveal-2">
+                          <hr>
+                          <h2 class="page-title">Roadmap</h2>
+                        </div>
+                        <div class="col-12 col-md-4 reveal-2">
+                            <h3>Phase 1</h3>
+                            <article class="card">
+                                <ul>
+                                    <li><i class="fas fa-check"></i>Launch the token</li>
+                                    <li><i class="fas fa-check"></i>Burn Liquidity</li>
+                                    <li><i class="fas fa-check"></i>Renounce Contract Ownership</li>
+                                    <li><i class="fas fa-check"></i>Launch Socials</li>
+                                </ul>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-4 reveal-2">
+                            <h3>Phase 2</h3>
+                            <article class="card">
+                                <ul>
+                                    <li><i class="fas fa-chevron-right"></i>CG Listing</li>
+                                    <li><i class="fas fa-chevron-right"></i>CMC Listing</li>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-4 reveal-2">
+                            <h3>2020 - Q4</h3>
+                            <article class="card">
+                                <ul>
+                                  <li><i class="fas fa-chevron-right"></i>Major CEX Listing</li>
+                                  <li><i class="fas fa-chevron-right"></i>Social Media Awareness</li>
+                                  <li><i class="fas fa-chevron-right"></i>Mass Adoption of $DINU</li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ressources section -->
+            <section id="ressources" class="page-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 reveal-2 align-self-start">
+                            <hr>
+                            <p class="page-subtitle">Trade, Buy and Hold Token</p>
+                            <h2 class="page-title">Ressources</h2>
+                        </div>
+                        <article class="col-6 col-md-4 reveal-2">
+                            <h3><i class="fas fa-exchange-alt"></i> Exchanges</h3>
+                            <ul>
+                                <li><a href="https://dogeswap.org/#/swap?outputCurrency=0x8a764cf73438de795c98707b07034e577af54825">DogeSwap</a></li>
+                            </ul>
+                        </article>
+                        <article class="col-6 col-md-4 reveal-2">
+                            <h3><i class="fa-solid fa-chart-line"></i></i>Charts</h3>
+                            <ul>
+                                <li><a href="https://www.dextools.io/app/dogechain/pair-explorer/0x17ee6a045d514818418372b2bb8e9997e71eec8f">Dextools</a></li>
+                                <li><a href="https://dexscreener.com/dogechain/0x17ee6a045d514818418372b2bb8e9997e71eec8f">Dexscreener</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- Main Footer -->
+            <footer class="main-footer">
+                <div class="container">
+                    <div class="row">
+                        <article class="col-12 col-md-3">
+                            <h3>Navigation</h3>
+                            <ul>
+                                <li><a href="#about">About us</a></li>
+                                <li><a href="#features">Features</a></li>
+                                <li><a href="#team">Team</a></li>
+                                <li><a href="#partners">Partners</a></li>
+                                <li><a href="#roadmap">Roadmap</a></li>
+                            </ul>
+                        </article>
+                        <article class="col-12 col-md-3">
+                            <h3>Ressources</h3>
+                            <ul>
+                                <li><a href="https://dexscreener.com/dogechain/0x17ee6a045d514818418372b2bb8e9997e71eec8f">Chart</a></li>
+                                <li><a href="https://explorer.dogechain.dog/token/0x8a764cF73438dE795c98707B07034e577Af54825">Explorer</a></li>
+                            </ul>
+                        </article>
+                        <article class="col-12 col-md-3">
+                            <h3>Exchanges</h3>
+                            <ul>
+                              <li><a href="https://dogeswap.org/#/swap?outputCurrency=0x8a764cf73438de795c98707b07034e577af54825">DogeSwap</a></li>
+                              <li><a href="#">Coming Soon</a></li>
+                              <li><a href="#">Coming Soon</a></li>
+                            </ul>
+                        </article>
+                        <article class="col-12 col-md-3">
+                            <h3>Community</h3>
+                            <ul>
+                              <li><a href="https://twitter.com/DogeInuDC">Twitter</a></li>
+                              <li><a href="https://t.me/DogeInuDC">Telegram</a></li>
+                              <li><a href="https://reddit.com/r/dogeinuDC">Reddit</a></li>
+                              <li><a href="https://www.tiktok.com/@dinu_dc_king">TikTok</a></li>
+                            </ul>
+                        </article>
+                        <div class="col-12">
+                            <hr>
+                        </div>
+                        <div class="col-12 col-md-6 social">
+                            <p>
+                                <a target="_blank" href="https://twitter.com/DogeInuDC"><i class="fa-brands fa-twitter"></i></a>
+                                <a target="_blank" href="https://t.me/DogeInuDC"><i class="fa-brands fa-telegram"></i></a>
+                                <a target="_blank" href="https://reddit.com/r/dogeinuDC"><i class="fa-brands fa-reddit"></i></a>
+                                <a target="_blank" href="https://github.com/arthurrebre/ikkuna"><i class="fa-brands fa-tiktok"></i></a>
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6 copyright">
+                            <p>2022 Doge Inu Community 100% Opensource</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- PopperJS & Bootstrap CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- Slick -->
+        <script type="text/javascript" src="libs/slick/slick.min.js"></script>
+        <script>
+            $('.partners-slider').slick({
+                dots: false,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                  {
+                    breakpoint: 1024,
+                    settings: {
+                      slidesToShow: 3
+                    }
+                  },
+                  {
+                    breakpoint: 600,
+                    settings: {
+                      slidesToShow: 3
+                    }
+                  },
+                  {
+                    breakpoint: 480,
+                    settings: {
+                      slidesToShow: 2
+                    }
+                  }
+                ]
+            });
+        </script>
+        <!-- -->
+        <script src="js/app.js"></script>
+    </body>
+</html>
