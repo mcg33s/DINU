@@ -1,6 +1,6 @@
 # Doge Inu ($DINU) Community Website
 
-This is the official website for Doge Inu. Hosted in a completly decentalized manner. If for whatever reason you are not able to access this page via https://dinu.dog visit the git hosted site here https://dinu.dog.github.io/website/. Alternatively you could also fork / download the zip version of this repo and open the index.html file in any browser.
+This is the official website for Doge Inu. Hosted in a cheap and effective way. If for whatever reason you are not able to access this page via https://dinu.dog visit the git hosted site here https://mcg33s.github.io/dinu Alternatively you could also fork / download the zip version of this repo and open the index.html file in any browser.
 
 ## About us
 
