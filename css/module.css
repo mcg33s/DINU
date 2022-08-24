@@ -267,11 +267,11 @@ opacity: 0;
 }
 #roadmap article ul li {
     color: #2b2019;
-    font-size: .8rem;
+    font-size: .9rem;
     margin-bottom: 20px;
 }
 #roadmap article ul li i {
-    font-size: .6rem;
+    font-size: .8rem;
     margin-right: .4rem;
 }
 #roadmap article ul li i.fa-check {
