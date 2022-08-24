@@ -101,6 +101,18 @@
     min-height: 15.5rem
 }
 
+/* BUY */
+/* ROADMAP */
+#buy h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+#buy .card {
+    padding: 40px 20px 30px 20px;
+    min-height: 15.5rem
+}
+
+
 @media (max-width: 768px) {
 
     /* MAIN BANNER */
