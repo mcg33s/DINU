@@ -299,7 +299,9 @@ opacity: 0;
     color: #2ecc71;
     margin-right: .2rem;
 }
-
+#buy article ul li a {
+    color: #ea813a;
+}
 
 /* RESSOURCES */
 #ressources article ul li {
